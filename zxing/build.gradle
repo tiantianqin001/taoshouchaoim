@@ -1,0 +1,18 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+
+        minSdkVersion 21
+
+        targetSdkVersion 30
+    }
+}
+
+dependencies {
+    api 'com.google.zxing:core:3.3.3'
+    api project(':qrcodecore')
+}

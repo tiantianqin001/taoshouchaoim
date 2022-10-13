@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="78dp"
+    android:background="@drawable/envelope_background_right"
+    android:id="@+id/rl_base"
+    >
+
+    <ImageView
+        android:id="@+id/iv_red_envelope_received"
+        android:layout_width="30dp"
+        android:layout_height="38dp"
+        android:layout_marginLeft="12dp"
+        android:layout_marginTop="12dp"
+        android:src="@drawable/no_red_envelope" />
+
+    <TextView
+        android:id="@+id/tv_top_node"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="14dp"
+        android:text="恭喜发财,大吉大利"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/tv_bottom_node"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_top_node"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="4dp"
+        android:text="点击领取"
+        android:textColor="#FFFFFF"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="红包"
+        android:textSize="11sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="4dp"
+        />
+    
+
+
+</RelativeLayout>

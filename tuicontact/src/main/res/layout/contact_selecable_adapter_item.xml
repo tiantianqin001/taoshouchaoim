@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:focusable="true"
+    android:background="#F2F2F2"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:id="@+id/selectable_contact_item"
+        android:layout_width="match_parent"
+        android:layout_height="46.5dp"
+
+        android:focusable="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_centerVertical="true"
+            android:background="#FFFFFF"
+            android:paddingLeft="15.36dp">
+
+            <CheckBox
+                android:id="@+id/contact_check_box"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center_vertical"
+                android:button="@drawable/checkbox_selector"
+                android:clickable="false"
+                android:focusable="false"
+                android:visibility="gone" />
+
+            <RelativeLayout
+                android:id="@+id/rl_ivAvatar"
+                android:layout_width="45dp"
+                android:layout_height="@dimen/contact_avatar_width"
+                android:layout_gravity="center_vertical"
+                >
+
+                <com.tencent.qcloud.tuicore.component.gatherimage.SynthesizedImageView
+                    android:id="@+id/ivAvatar"
+                    android:layout_width="@dimen/contact_avatar_width"
+                    android:layout_height="@dimen/contact_avatar_height"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:visibility="invisible"
+
+                    />
+                <View
+                    android:id="@+id/user_status"
+                    android:layout_width="12dp"
+                    android:layout_height="12dp"
+                    android:layout_alignParentBottom="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginEnd="0dp"
+                    android:layout_marginBottom="1dp"
+                    android:background="?attr/user_status_offline"
+                    android:visibility="gone"
+                    android:elevation="4dp"
+                    tools:ignore="RtlCompat" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_middle_count"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="18dp"
+                >
+
+                <TextView
+                    android:id="@+id/tvCity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerInParent="true"
+                    android:singleLine="true"
+                    android:ellipsize="end"
+                    android:textSize="16sp"
+                    android:clickable="false"
+                    android:focusable="false"
+                    android:textColor="#333333"
+                    />
+
+                <com.tencent.qcloud.tuicore.component.UnreadCountTextView
+                    android:id="@+id/conversation_unread"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerInParent="true"
+                    android:layout_marginRight="44dp"
+                    android:gravity="center"
+                    android:includeFontPadding="false"
+                    android:textColor="#fff"
+                    android:textSize="10sp" />
+
+                <ImageView
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:padding="10dp"
+                    android:layout_marginTop="6dp"
+                    android:src="@drawable/address_book_back" />
+
+                <View
+                    android:id="@+id/view_line"
+                    android:layout_width="match_parent"
+                    android:layout_height="0.5dp"
+                    android:layout_alignParentBottom="true"
+                    android:background="#EEEEEE" />
+
+            </RelativeLayout>
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <!--显示好友和群聊-->
+    <LinearLayout
+        android:id="@+id/ll_base_friend"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginTop="12dp"
+        android:orientation="horizontal"
+        android:background="@color/white"
+        android:paddingTop="8dp"
+        android:paddingBottom="8dp"
+
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_contacts_friends"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+
+            >
+            <TextView
+                android:id="@+id/tv_contacts_friends"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="好友"
+                android:textSize="15sp"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textColor="@color/white"
+                android:background="@drawable/save_firent_bg"
+                android:gravity="center"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_contacts_group_chat"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            >
+            <TextView
+                android:id="@+id/tv_contacts_group_chat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="群聊"
+                android:textSize="15sp"
+                android:paddingLeft="28dp"
+                android:paddingRight="28dp"
+                android:paddingTop="7dp"
+                android:paddingBottom="7dp"
+                android:textColor="@color/goup_info"
+                android:gravity="center"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</LinearLayout>

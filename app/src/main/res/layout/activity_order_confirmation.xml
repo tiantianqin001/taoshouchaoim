@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EFEFF3">
+
+    <androidx.constraintlayout.widget.Group
+        android:id="@+id/group_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:constraint_referenced_ids="view_1,tv_name_address,tv_phone_address,tv_address,iv_address" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_add_address"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/ic_address_let"
+        android:drawableRight="@drawable/seal_ic_mine_go"
+        android:drawablePadding="10dp"
+        android:gravity="center_vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:text="新增地址"
+        android:textSize="16dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@id/view_bg"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <View
+        android:id="@+id/view_bg"
+        android:layout_width="match_parent"
+        android:layout_height="147dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/view_1" />
+
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="match_parent"
+        android:layout_height="189dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/view_bg" />
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="match_parent"
+        android:layout_height="72dp"
+        android:background="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:maxWidth="150dp"
+        android:maxLines="1"
+        android:textColor="#ff333333"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toTopOf="@id/view_1"
+        tools:text="张三三" />
+
+    <TextView
+        android:id="@+id/tv_phone_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:maxWidth="150dp"
+        android:maxLines="1"
+        android:textColor="#ff999999"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/tv_name_address"
+        app:layout_constraintTop_toTopOf="@id/tv_name_address"
+        tools:text="18888888888" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:maxLines="1"
+        android:textColor="#ff666666"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/tv_name_address"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_address"
+        tools:text="安徽省合肥市XX区徽州大道尚泽大都会" />
+
+    <ImageView
+        android:id="@+id/iv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/seal_ic_mine_go"
+        app:layout_constraintBottom_toBottomOf="@id/view_1"
+        app:layout_constraintEnd_toEndOf="@id/view_1"
+        app:layout_constraintTop_toTopOf="@id/view_1" />
+
+    <ImageView
+        android:id="@+id/iv_order_log"
+        android:layout_width="108dp"
+        android:layout_height="108dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/view_bg"
+        app:layout_constraintStart_toStartOf="@id/view_bg"
+        app:layout_constraintTop_toTopOf="@id/view_bg"
+        tools:background="@mipmap/test_mall" />
+
+    <TextView
+        android:id="@+id/tv_title_older"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="19dp"
+        android:layout_marginEnd="10dp"
+        android:maxLines="3"
+        android:text="新鲜安岳柠檬5.5斤当季水果应季免邮包邮一皮薄小青级香水鲜柠檬"
+        android:textColor="#ff000000"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toEndOf="@id/iv_order_log"
+        app:layout_constraintTop_toTopOf="@id/iv_order_log" />
+
+    <TextView
+        android:id="@+id/tv_money_order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="¥43.88"
+        android:textColor="#ff999999"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/iv_order_log"
+        app:layout_constraintStart_toStartOf="@id/tv_title_older" />
+
+    <TextView
+        android:id="@+id/tv_num"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="x 1"
+        android:textColor="#ff999999"
+        android:textSize="12dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_money_order"
+        app:layout_constraintEnd_toEndOf="@id/view_bg"
+        app:layout_constraintTop_toTopOf="@id/tv_money_order" />
+
+    <TextView
+        android:id="@+id/tv_delivery_method"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="17dp"
+        android:text="配送方式"
+        android:textColor="#ff333333"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/view_3"
+        app:layout_constraintTop_toTopOf="@id/view_3" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="10dp"
+        android:text="快递配送"
+        android:textColor="#ff999999"
+        android:textSize="15dp"
+        app:layout_constraintEnd_toEndOf="@id/view_3"
+        app:layout_constraintTop_toTopOf="@id/tv_delivery_method" />
+
+    <ImageView
+        android:id="@+id/view_delivery_xu"
+        android:layout_width="0dp"
+        android:layout_height="2dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_dot_line_xu"
+        android:layerType="software"
+        app:layout_constraintEnd_toEndOf="@id/view_3"
+        app:layout_constraintStart_toStartOf="@id/view_3"
+        app:layout_constraintTop_toBottomOf="@id/tv_delivery_method" />
+
+    <TextView
+        android:id="@+id/tv_buyer_message"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="15dp"
+        android:text="买家留言"
+        android:textColor="#ff333333"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/view_3"
+        app:layout_constraintTop_toBottomOf="@id/view_delivery_xu" />
+
+    <EditText
+        android:layout_width="0dp"
+        android:layout_height="75dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_et_f6"
+        android:gravity="left"
+        android:hint="请添加备注~（150字以内）"
+        android:paddingLeft="10dp"
+        android:paddingTop="10dp"
+        android:textColorHint="#ffcccccc"
+        android:textSize="12dp"
+        app:layout_constraintEnd_toEndOf="@id/view_3"
+        app:layout_constraintStart_toStartOf="@id/view_3"
+        app:layout_constraintTop_toBottomOf="@id/tv_buyer_message" />
+
+    <TextView
+        android:id="@+id/tv_total"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:text="合计："
+        android:textColor="#ff999999"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/view_4"
+        app:layout_constraintStart_toStartOf="@id/view_4"
+        app:layout_constraintTop_toTopOf="@id/view_4" />
+
+    <TextView
+        android:id="@+id/tv_money_key"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:padding="3dp"
+        android:text="¥"
+        android:textColor="#FF4444"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_money"
+        app:layout_constraintStart_toEndOf="@id/tv_total" />
+
+    <TextView
+        android:id="@+id/tv_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="43.88"
+        android:textColor="#FF4444"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="@id/view_4"
+        app:layout_constraintStart_toEndOf="@id/tv_money_key"
+        app:layout_constraintTop_toTopOf="@id/view_4" />
+
+    <TextView
+        android:id="@+id/tv_money_integral"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="3dp"
+        android:paddingBottom="3dp"
+        android:text="+"
+        android:textColor="#FF4444"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/tv_money"
+        app:layout_constraintStart_toEndOf="@id/tv_money" />
+
+    <Button
+        android:id="@+id/btn_settle_accounts"
+        android:layout_width="80dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/shape_cff4_r20"
+        android:text="结算"
+        android:textColor="#ffffffff"
+        android:textSize="15dp"
+        app:layout_constraintBottom_toBottomOf="@id/view_4"
+        app:layout_constraintEnd_toEndOf="@id/view_4"
+        app:layout_constraintTop_toTopOf="@id/view_4" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

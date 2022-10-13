@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="12dp">
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="115dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_name_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="12dp"
+        android:maxWidth="150dp"
+        android:maxLines="1"
+        android:text="张三三"
+        android:textColor="#ff333333"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintTop_toTopOf="@id/view_1" />
+
+    <TextView
+        android:id="@+id/tv_phone_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:maxWidth="150dp"
+        android:maxLines="1"
+        android:text="18888888888"
+        android:textColor="#ff999999"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@id/tv_name_address"
+        app:layout_constraintTop_toTopOf="@id/tv_name_address" />
+
+    <TextView
+        android:id="@+id/tv_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="安徽省合肥市XX区徽州大道尚泽大都会"
+        android:textColor="#ff666666"
+        android:textSize="15dp"
+        app:layout_constraintStart_toStartOf="@id/tv_name_address"
+        app:layout_constraintTop_toBottomOf="@id/tv_name_address" />
+
+    <View
+        android:id="@+id/view_ddd"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="16dp"
+        android:background="@color/color_ddd"
+        app:layout_constraintTop_toBottomOf="@id/tv_address" />
+
+    <CheckBox
+        android:id="@+id/cb_default"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:padding="5dp"
+        android:text="设置默认"
+        android:textColor="@color/checkbox_color"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_ddd" />
+
+    <TextView
+        android:id="@+id/tv_edit"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:drawableLeft="@mipmap/ic_edit"
+        android:gravity="center"
+        android:text="编辑"
+        android:textColor="#ff999999"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/cb_default"
+        app:layout_constraintEnd_toStartOf="@id/tv_del"
+        app:layout_constraintTop_toTopOf="@id/cb_default" />
+
+    <TextView
+        android:id="@+id/tv_del"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="10dp"
+        android:drawableLeft="@mipmap/ic_del"
+        android:gravity="center"
+        android:text="删除"
+        android:textColor="#ff999999"
+        android:textSize="10dp"
+        app:layout_constraintBottom_toBottomOf="@id/cb_default"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/cb_default" />
+</androidx.constraintlayout.widget.ConstraintLayout>

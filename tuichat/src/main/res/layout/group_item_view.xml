@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="66dp"
+
+    >
+
+    <ImageView
+        android:id="@+id/tv_group_avatar"
+        android:layout_width="36dp"
+        android:layout_height="36dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/persion_avatar" />
+
+    <TextView
+        android:id="@+id/tv_group_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_toRightOf="@+id/tv_group_avatar"
+        android:text="飞猪"
+        android:layout_marginTop="15dp"
+        android:textColor="#333333"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tv_group_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_group_name"
+        android:layout_toRightOf="@+id/tv_group_avatar"
+        android:layout_marginLeft="8dp"
+        android:textColor="#999999"
+        android:textSize="9sp"
+        android:text="05-07"
+        android:layout_marginTop="6dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_group_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="15dp"
+        android:layout_marginRight="0dp"
+        android:text="8元"
+        android:textColor="#333333"
+
+        android:textSize="12sp" />
+    <TextView
+        android:id="@+id/tv_group_best_luck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="手气最佳"
+        android:textColor="#FFBF11"
+        android:textSize="10sp"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/tv_group_money"
+        android:layout_marginTop="5dp"
+        />
+    <ImageView
+        android:id="@+id/iv_group_best_luck"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/best_luck"
+        android:layout_toLeftOf="@+id/tv_group_best_luck"
+        android:layout_below="@+id/tv_group_money"
+        android:layout_marginTop="4dp"
+        />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE" />
+
+
+</RelativeLayout>

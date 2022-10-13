@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="@dimen/qb_px_24"
+        android:paddingTop="@dimen/qb_px_35"
+        android:paddingRight="@dimen/qb_px_24">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="上传身份证照片"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_30" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_8"
+            android:text="仅用于平台审核"
+            android:textColor="#999999"
+            android:textSize="@dimen/qb_px_15" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_20"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:id="@+id/id1"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:background="@drawable/bg_id_item"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/qb_px_17"
+                android:paddingTop="@dimen/qb_px_13"
+                android:paddingRight="@dimen/qb_px_17"
+                android:paddingBottom="@dimen/qb_px_13">
+
+                <ImageView
+                    android:id="@+id/id_main"
+                    android:layout_width="@dimen/qb_px_117"
+                    android:layout_height="@dimen/qb_px_78"
+                    android:src="@mipmap/id_main" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/qb_px_14"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点击上传"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/qb_px_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/qb_px_5"
+                        android:text="人像面"
+                        android:textColor="#FF7F00"
+                        android:textSize="@dimen/qb_px_13" />
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/id2"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/qb_px_25"
+                android:layout_weight="1"
+                android:background="@drawable/bg_id_item"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:paddingLeft="@dimen/qb_px_17"
+                android:paddingTop="@dimen/qb_px_13"
+                android:paddingRight="@dimen/qb_px_17"
+                android:paddingBottom="@dimen/qb_px_13">
+
+                <ImageView
+                    android:id="@+id/id_back"
+                    android:layout_width="@dimen/qb_px_117"
+                    android:layout_height="@dimen/qb_px_78"
+                    android:src="@mipmap/id_back" />
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/qb_px_14"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="点击上传"
+                        android:textColor="#666666"
+                        android:textSize="@dimen/qb_px_13" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/qb_px_5"
+                        android:text="国徽面"
+                        android:textColor="#FF7F00"
+                        android:textSize="@dimen/qb_px_13" />
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/qb_px_50"
+            android:text="拍摄须知"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_16" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_72"
+                android:layout_height="@dimen/qb_px_72"
+                android:layout_marginRight="@dimen/qb_px_12"
+                android:src="@mipmap/id_tip_1" />
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_72"
+                android:layout_height="@dimen/qb_px_72"
+                android:layout_marginRight="@dimen/qb_px_12"
+                android:src="@mipmap/id_tip_1" />
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_72"
+                android:layout_height="@dimen/qb_px_72"
+                android:layout_marginRight="@dimen/qb_px_12"
+                android:src="@mipmap/id_tip_1" />
+
+            <ImageView
+                android:layout_width="@dimen/qb_px_72"
+                android:layout_height="@dimen/qb_px_72"
+                android:src="@mipmap/id_tip_1" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="@dimen/qb_px_230"
+        android:layout_height="@dimen/qb_px_40"
+        android:layout_marginTop="@dimen/qb_px_70"
+        android:background="@drawable/bg_modify_btn"
+        android:gravity="center"
+        android:text="提交"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/qb_px_15" />
+</LinearLayout>

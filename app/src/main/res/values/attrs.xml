@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <!--自定义等待view中的属性-->
+    <declare-styleable name="CustomLoadingView">
+        <!--loading动画执行一次所需的时间-->
+        <attr name="round_once_time" format="integer"></attr>
+        <!--外层圆弧的颜色-->
+        <attr name="round_outside_color" format="color"></attr>
+        <!--内层圆弧的颜色-->
+        <attr name="round_inside_color" format="color"></attr>
+        <!--内层圆弧的角度-->
+        <attr name="round_inside_angle" format="float"></attr>
+        <!--外层圆弧的角度默认为330度-->
+        <attr name="round_outside_angle" format="float"></attr>
+        <!--圆弧旋转的起始角度-->
+        <attr name="round_start_angle" format="float"></attr>
+    </declare-styleable>
+
+    <style name="TextStyle.Alignment" parent="@android:style/Widget.TextView">
+        <item name="android:textDirection">locale</item>
+    </style>
+
+
+
+    <declare-styleable name="SwitchButton">
+        <attr name="kswThumbDrawable" format="reference" />
+        <attr name="kswThumbColor" format="color|reference" />
+        <attr name="kswThumbMargin" format="dimension|reference" />
+        <attr name="kswThumbMarginTop" format="dimension|reference" />
+        <attr name="kswThumbMarginBottom" format="dimension|reference" />
+        <attr name="kswThumbMarginLeft" format="dimension|reference" />
+        <attr name="kswThumbMarginRight" format="dimension|reference" />
+        <attr name="kswThumbWidth" format="dimension|reference" />
+        <attr name="kswThumbHeight" format="dimension|reference" />
+        <attr name="kswThumbRadius" format="dimension|reference" />
+        <attr name="kswBackRadius" format="dimension|reference" />
+        <attr name="kswBackDrawable" format="reference" />
+        <attr name="kswBackColor" format="color|reference" />
+        <attr name="kswFadeBack" format="boolean" />
+        <attr name="kswBackMeasureRatio" format="float" />
+        <attr name="kswAnimationDuration" format="integer" />
+        <attr name="kswTintColor" format="color|reference" />
+        <attr name="kswTextOn" format="string" />
+        <attr name="kswTextOff" format="string" />
+        <attr name="kswTextMarginH" format="dimension" />
+    </declare-styleable>
+
+    <!--设置-->
+    <declare-styleable name="SettingItemView">
+        <attr name="item_image" format="reference" />
+        <attr name="item_image_height" format="dimension" />
+        <attr name="item_image_width" format="dimension" />
+        <attr name="item_content" format="string" />
+        <attr name="item_content_text_size" format="dimension" />
+        <attr name="item_content_text_color" format="color" />
+        <attr name="item_value" format="string" />
+        <attr name="item_value_text_size" format="dimension" />
+        <attr name="item_value_text_color" format="color" />
+        <attr name="item_divider" format="boolean" />
+        <attr name="item_tag_image_height" format="dimension" />
+        <attr name="item_tag_image_width" format="dimension" />
+        <attr name="item_tag_image" format="reference" />
+        <attr name="item_switch" format="boolean" />
+        <attr name="item_background" format="reference" />
+        <attr name="item_null_background" format="boolean" />
+        <attr name="item_show_selected" format="boolean" />
+        <attr name="item_selected_image" format="reference" />
+        <attr name="item_right_image" format="reference" />
+        <attr name="item_right_image_width" format="dimension" />
+        <attr name="item_right_image_height" format="dimension" />
+
+    </declare-styleable>
+
+    <declare-styleable name="circletextview">
+        <attr name="circle_text_color" format="color"/>
+        <attr name="circle_color" format="color"/>
+        <attr name="random_color" format="boolean"/>
+        <attr name="sub_first_character" format="boolean"/>
+    </declare-styleable>
+
+
+
+    <style name="CustomCheckboxTheme" parent="@android:style/Widget.CompoundButton.CheckBox">
+        <item name="android:button">@drawable/checkbox_style</item>
+        <!--        <item name="colorControlNormal">@color/gray</item>-->
+        <!--        <item name="colorControlActivated">@color/read_ff</item>-->
+
+    </style>
+
+
+
+
+    <declare-styleable name="AmountView">
+        <!-- 左右2边+-按钮的宽度 -->
+        <attr name="btnWidth" format="dimension" />
+        <!-- 中间TextView的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!--<attr name="tvColor" format="color"/>-->
+        <attr name="tvTextSize" format="dimension"/>
+        <attr name="btnTextSize" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="EmptyView">
+        <attr name="comEmptyText" format="integer" />
+        <attr name="comErrorText" format="integer" />
+        <attr name="comLoadingText" format="integer" />
+        <attr name="comEmptyDrawable" format="integer" />
+        <attr name="comErrorDrawable" format="integer" />
+    </declare-styleable>
+
+    <declare-styleable name="CustomerKeyboard">
+        <!--        布局id-->
+        <attr name="customerKeyboardLayout" format="reference"/>
+    </declare-styleable>
+
+
+</resources>

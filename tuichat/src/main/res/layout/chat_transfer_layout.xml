@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="78dp"
+    android:background="@drawable/transfer_background_right"
+
+    >
+   <ImageView
+       android:layout_width="30dp"
+       android:layout_height="38dp"
+       android:src="@drawable/iv_receive_transfer"
+       android:layout_marginTop="12dp"
+        android:layout_marginLeft="12dp"
+       />
+
+    <TextView
+        android:id="@+id/tv_transfer_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="15dp"
+        android:text="￥0.01"
+        android:textColor="#FFFFFF"
+        android:textSize="16sp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_transfer_money"
+        android:layout_marginLeft="60dp"
+
+        android:text="已收款"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:text="转账"
+        android:textSize="11sp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginBottom="4dp"
+        />
+    
+
+
+</RelativeLayout>

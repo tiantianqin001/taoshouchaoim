@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#F7F7F7"
+    android:orientation="horizontal"
+    android:padding="10dp"
+    >
+
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="3"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+<!--第一行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="1"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:background="@drawable/bg_common_btn_input"
+                android:gravity="center"
+                android:text="2"
+                android:textColor="#1A1A1A"
+                android:textSize="22sp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="3"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginLeft="8dp"
+                />
+
+        </LinearLayout>
+        <!--第二行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="4"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="5"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="6"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+        </LinearLayout>
+        <!--第三行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="7"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginTop="8dp"
+
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="8"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="9"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+        </LinearLayout>
+        <!--第四行-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="2"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="0"
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginTop="8dp"
+                />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="44dp"
+                android:textSize="22sp"
+                android:text="."
+                android:textColor="#1A1A1A"
+                android:gravity="center"
+                android:background="@drawable/bg_common_btn_input"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="8dp"
+                />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_weight="1"
+        android:orientation="vertical"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:src="@drawable/transfer_del"
+            android:gravity="center"
+            android:background="@drawable/bg_common_btn_input"
+            android:layout_marginLeft="8dp"
+            android:padding="10dp"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="转账"
+            android:textColor="#fff"
+            android:background="@drawable/bg_common_btn_ok"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="8dp"
+            />
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

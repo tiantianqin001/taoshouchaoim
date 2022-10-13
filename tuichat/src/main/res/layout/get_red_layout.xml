@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="60dp">
+
+    <TextView
+        android:id="@+id/tv_get_red_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="12sp"
+        android:text="星期四"
+        android:layout_centerHorizontal="true"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:gravity="center"
+
+        >
+
+        <ImageView
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:src="@drawable/no_red_envelope"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:id="@+id/tv_get_red_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="你领取了自己发的"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红包"
+            android:textSize="10sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/order_message_color"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar_layout" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/qb_px_10" />
+
+    <LinearLayout
+        android:id="@+id/btn"
+        android:layout_width="@dimen/qb_px_230"
+        android:layout_height="@dimen/qb_px_40"
+        android:layout_marginTop="@dimen/qb_px_55"
+        android:layout_marginBottom="@dimen/qb_px_20"
+        android:background="@drawable/bg_modify_btn"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/btn_icon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="+"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/qb_px_28" />
+
+        <TextView
+            android:id="@+id/btn_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_7"
+            android:text="添加银行卡"
+            android:textColor="#FFFFFF"
+            android:textSize="@dimen/qb_px_15" />
+    </LinearLayout>
+
+</LinearLayout>

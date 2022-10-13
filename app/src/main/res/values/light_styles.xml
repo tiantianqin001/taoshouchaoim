@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="DemoLightTheme" parent="TUIBaseLightTheme">
+
+        <item name="demo_title_bar_more">@mipmap/title_bar_more_light</item>
+
+
+
+    </style>
+</resources>

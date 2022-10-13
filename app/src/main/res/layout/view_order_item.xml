@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/qb_px_12"
+    android:layout_marginRight="@dimen/qb_px_12"
+    android:layout_marginBottom="@dimen/qb_px_10"
+    android:background="@drawable/bg_list_item"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/qb_px_8"
+    android:paddingTop="@dimen/qb_px_5"
+    android:paddingRight="@dimen/qb_px_14">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_102"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="@dimen/qb_px_107"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop" />
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/qb_px_12"
+            android:layout_marginTop="@dimen/qb_px_7"
+            android:layout_marginBottom="@dimen/qb_px_10"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textColor="#262626"
+                android:textSize="@dimen/qb_px_13"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="bottom"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="￥"
+                    android:textColor="#F72A1E"
+                    android:textSize="@dimen/qb_px_13"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/charge"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#F72A1E"
+                    android:textSize="@dimen/qb_px_20"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/charge2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/qb_px_6"
+                    android:textColor="#BFBFBF"
+                    android:textSize="@dimen/qb_px_11"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/num"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:gravity="right"
+                    android:textColor="#808080"
+                    android:textSize="@dimen/qb_px_14" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_48"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textColor="#999999"
+            android:textSize="@dimen/qb_px_10" />
+
+        <TextView
+            android:id="@+id/type"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/bg_order_item_type"
+            android:paddingLeft="@dimen/qb_px_14"
+            android:paddingTop="@dimen/qb_px_4"
+            android:paddingRight="@dimen/qb_px_14"
+            android:paddingBottom="@dimen/qb_px_4"
+            android:text="待发货"
+            android:textColor="#FF7F00"
+            android:textSize="@dimen/qb_px_14" />
+    </LinearLayout>
+</LinearLayout>

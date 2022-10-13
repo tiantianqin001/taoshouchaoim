@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_margin="20dp"
+        android:background="@drawable/save_red_add_bg_two"
+        >
+
+        <LinearLayout
+            android:id="@+id/ll_name_red_envelop"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            >
+
+            <ImageView
+                android:id="@+id/iv_red_avtor"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/persion_avatar"
+                />
+
+            <TextView
+                android:id="@+id/tv_name_red_envelop"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="12dp"
+                android:text="哈林发出的红包"
+                android:textColor="#FFE5BB"
+                android:textSize="18sp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tv_exclusive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/ll_name_red_envelop"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:text="恭喜发财，大吉大利"
+            android:textColor="#FFE5BB"
+            android:textSize="22sp" />
+
+
+        <TextView
+            android:id="@+id/tv_open_red"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="70dp"
+            android:background="@drawable/save_red_open_bg"
+            android:gravity="center"
+            android:text="開"
+            android:textColor="#413E39"
+            android:textSize="28dp" />
+
+
+
+    </RelativeLayout>
+
+
+
+
+</LinearLayout>

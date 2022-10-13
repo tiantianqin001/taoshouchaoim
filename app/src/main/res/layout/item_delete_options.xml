@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="@dimen/qb_px_60"
+    android:layout_height="@dimen/qb_px_70"
+    android:background="@color/main_enterprise_info_text"
+    >
+
+    <TextView
+        android:id="@+id/tv_advice_del"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="删除"
+        android:textSize="@dimen/qb_px_14"
+        android:textColor="@color/white"
+        android:layout_centerInParent="true"
+
+        />
+
+</RelativeLayout>

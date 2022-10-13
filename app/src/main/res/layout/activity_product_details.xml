@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:focusableInTouchMode="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:descendantFocusability="blocksDescendants">
+
+            <ImageView
+                android:id="@+id/iv_bg"
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:background="@color/white"
+                app:layout_constraintBottom_toBottomOf="@id/tv_official_mall"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.youth.banner.Banner
+                android:id="@+id/banner_commodity"
+                android:layout_width="match_parent"
+                android:layout_height="375dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:background="@mipmap/test_mall2" />
+
+            <!--            <TextView-->
+            <!--                android:id="@+id/tv_money"-->
+            <!--                android:layout_width="wrap_content"-->
+            <!--                android:layout_height="wrap_content"-->
+            <!--                android:layout_marginStart="14dp"-->
+            <!--                android:layout_marginTop="14dp"-->
+            <!--                android:text="¥43.88"-->
+            <!--                android:textColor="#ffea443b"-->
+            <!--                android:textSize="15dp"-->
+            <!--                app:layout_constraintStart_toStartOf="parent"-->
+            <!--                app:layout_constraintTop_toBottomOf="@id/banner_commodity" />-->
+
+            <TextView
+                android:id="@+id/tv_money_key"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="14dp"
+                android:paddingBottom="3dp"
+                android:text="¥"
+                android:textColor="#FF4444"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/banner_commodity" />
+
+            <TextView
+                android:id="@+id/tv_money"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="43.88"
+                android:textColor="#FF4444"
+                android:textSize="24dp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toBottomOf="@id/tv_money_key"
+                app:layout_constraintStart_toEndOf="@id/tv_money_key" />
+
+            <TextView
+                android:id="@+id/tv_money_integral"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="3dp"
+                android:paddingBottom="3dp"
+                android:text="+"
+                android:textColor="#FF4444"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_money"
+                app:layout_constraintStart_toEndOf="@id/tv_money" />
+
+            <TextView
+                android:id="@+id/tv_money_old"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:paddingBottom="3dp"
+                android:text="¥50.02"
+                android:textColor="#ff9d9d9d"
+                android:textSize="12dp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_money"
+                app:layout_constraintStart_toEndOf="@id/tv_money_integral" />
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:background="#9D9D9D"
+                app:layout_constraintBottom_toBottomOf="@id/tv_money_old"
+                app:layout_constraintEnd_toEndOf="@id/tv_money_old"
+                app:layout_constraintStart_toStartOf="@id/tv_money_old"
+                app:layout_constraintTop_toTopOf="@id/tv_money_old" />
+
+            <TextView
+                android:id="@+id/tv_product_desc"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="14dp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:text="新鲜安岳柠檬5.5斤当季水果应季免邮包邮一皮薄小青级香水鲜柠檬"
+                android:textColor="#ff000000"
+                android:textSize="15dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_money" />
+
+            <TextView
+                android:id="@+id/tv_sold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="27dp"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:text="已售303件"
+                android:textColor="#ff9d9d9d"
+                android:textSize="12dp"
+                app:layout_constraintStart_toStartOf="@id/tv_product_desc"
+                app:layout_constraintTop_toBottomOf="@id/tv_product_desc" />
+
+            <TextView
+                android:id="@+id/tv_stock"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="50dp"
+                android:maxWidth="150dp"
+                android:maxLines="1"
+                android:text="库存99件"
+                android:textColor="#ff9d9d9d"
+                android:textSize="12dp"
+                app:layout_constraintStart_toEndOf="@id/tv_sold"
+                app:layout_constraintTop_toTopOf="@id/tv_sold" />
+
+            <View
+                android:id="@+id/view_1"
+                android:layout_width="0dp"
+                android:layout_height="1dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="14dp"
+                android:background="@color/color_ddd"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/tv_sold" />
+
+            <TextView
+                android:id="@+id/tv_official_mall"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@mipmap/ic_official_mall"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:paddingBottom="10dp"
+                android:text="商城"
+                android:textColor="#ff9d9d9d"
+                android:textSize="15dp"
+                app:layout_constraintStart_toStartOf="@id/view_1"
+                app:layout_constraintTop_toBottomOf="@id/view_1" />
+
+            <TextView
+                android:id="@+id/tv_store_certification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="22dp"
+                android:drawableLeft="@mipmap/ic_official_mall"
+                android:drawablePadding="5dp"
+                android:gravity="center"
+                android:text="店铺认证"
+                android:textColor="#ff9d9d9d"
+                android:textSize="15dp"
+                app:layout_constraintStart_toEndOf="@id/tv_official_mall"
+                app:layout_constraintTop_toTopOf="@id/tv_official_mall" />
+
+            <TextView
+                android:id="@+id/tv_amount"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/white"
+                android:gravity="center_vertical"
+                android:paddingStart="14dp"
+                android:text="数量"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@id/iv_bg" />
+
+            <com.pingmo.chengyan.activity.shop.view.AmountView
+                android:id="@+id/amount_view"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_centerInParent="true"
+                android:layout_gravity="right"
+                android:layout_marginRight="15dp"
+                android:padding="10dp"
+                app:btnTextSize="14dp"
+                app:btnWidth="30dp"
+                app:layout_constraintBottom_toBottomOf="@id/tv_amount"
+                app:layout_constraintEnd_toEndOf="@id/tv_amount"
+                app:layout_constraintTop_toTopOf="@id/tv_amount"
+                app:tvWidth="45dp" />
+
+            <com.pingmo.chengyan.activity.shop.view.SettingItemView
+                android:id="@+id/siv_info"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_marginTop="@dimen/qb_px_20"
+                app:item_content="商品详情"
+                app:layout_constraintTop_toBottomOf="@id/amount_view" />
+            <!--        app:item_right_image="@drawable/seal_ic_mine_go"-->
+
+            <WebView
+                android:id="@+id/webview_product_details"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/siv_info" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+    <TextView
+        android:id="@+id/tv_buy"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#F00B50"
+        android:gravity="center"
+        android:text="立即购买"
+        android:textColor="@color/white"
+        android:textSize="15dp" />
+
+
+</LinearLayout>

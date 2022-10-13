@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="iconSize" format="dimension" />
+    <attr name="iconMargin" format="dimension" />
+    <attr name="iconSrc" format="reference" />
+    <attr name="iconLeft" format="reference" />
+    <attr name="iconRight" format="reference" />
+    <attr name="duration_max" format="integer" />
+
+    <declare-styleable name="JCameraView">
+        <attr name="iconSize" />
+        <attr name="iconMargin" />
+        <attr name="iconSrc" />
+        <attr name="iconLeft" />
+        <attr name="iconRight" />
+        <attr name="duration_max" />
+    </declare-styleable>
+
+    <declare-styleable name="PasswordEditText">
+        <!-- 密码的个数 -->
+        <attr name="passwordNumber" format="integer"/>
+        <!-- 密码圆点的半径 -->
+        <attr name="passwordRadius" format="dimension" />
+        <!-- 密码圆点的颜色 -->
+        <attr name="passwordColor" format="color" />
+        <!-- 分割线的颜色 -->
+        <attr name="divisionLineColor" format="color" />
+        <!-- 分割线的大小 -->
+        <attr name="divisionLineSize" format="color" />
+        <!-- 背景边框的颜色 -->
+        <attr name="bgColor" format="color" />
+        <!-- 背景边框的大小 -->
+        <attr name="bgSize" format="dimension" />
+        <!-- 背景边框的圆角大小 -->
+        <attr name="bgCorner" format="dimension"/>
+    </declare-styleable>
+
+    <declare-styleable name="CustomerKeyboard">
+        <!--        布局id-->
+        <attr name="customerKeyboardLayout" format="reference"/>
+    </declare-styleable>
+
+
+
+    <declare-styleable name="SynthesizedImageView">
+        <!--合成图片的背景-->
+        <attr name="synthesized_image_bg" format="color" />
+        <!--合成图片的默认图片-->
+        <attr name="synthesized_default_image" format="reference" />
+        <!--合成图片的尺寸-->
+        <attr name="synthesized_image_size" format="dimension" />
+        <!--多图片之间的空隙间隔-->
+        <attr name="synthesized_image_gap" format="dimension" />
+    </declare-styleable>
+
+    <declare-styleable name="max_width_style">
+        <attr name="maxWidth" format="dimension" />
+    </declare-styleable>
+
+
+    <declare-styleable name="PhoneCode">
+        <!-- 验证码长度 默认5 -->
+        <attr name="codeLength" format="integer" />
+        <!-- 验证码字体大小 8-->
+        <attr name="codeTextSize" format="dimension" />
+        <!-- 验证码字体颜色 -->
+        <attr name="codeTextColor" format="color" />
+        <!-- 验证码框的宽度 -->
+        <attr name="tvWidth" format="dimension" />
+        <!-- 验证码框的高度 -->
+        <attr name="tvHeight" format="dimension" />
+        <!-- 验证码框间距 -->
+        <attr name="codeMargin" format="dimension" />
+        <!-- 验证码默认背景 -->
+        <attr name="bgNormal" format="reference" />
+        <!-- 验证码焦点背景 -->
+        <attr name="bgFocus" format="reference" />
+
+        <!--输入框样式-->
+        <attr name="codeStyle" format="integer" />
+        <!--正常时边框颜色-->
+        <attr name="normalStrokeColor" format="color" />
+        <!--正常时内容背景颜色-->
+        <attr name="normalContentColor" format="color" />
+        <!--焦点时边框颜色-->
+        <attr name="focusStrokeColor" format="color" />
+        <!--焦点时内容背景颜色-->
+        <attr name="focusContentColor" format="color" />
+        <!--是否加粗-->
+        <attr name="isBold" format="boolean" />
+        <!--边框的宽度-->
+        <attr name="strokeSize" format="dimension" />
+        <!--是否输入类型为数字  默认true -->
+        <attr name="isNumber" format="boolean" />
+        <!--是否隐藏输入为密码符号  默认false -->
+        <attr name="isShowPwd" format="boolean" />
+
+    </declare-styleable>
+
+</resources>

@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar_layout" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_12"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:layout_marginRight="@dimen/qb_px_12"
+        android:background="@drawable/bg_list_item"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/qb_px_15"
+        android:paddingEnd="@dimen/qb_px_15">
+
+        <TextView
+            android:layout_width="@dimen/qb_px_100"
+            android:layout_height="wrap_content"
+            android:text="持卡人姓名"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入姓名"
+            android:textColor="#333333"
+            android:textColorHint="#CCCCCC"
+            android:textSize="@dimen/qb_px_15" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_12"
+        android:layout_marginTop="@dimen/qb_px_14"
+        android:layout_marginRight="@dimen/qb_px_12"
+        android:background="@drawable/bg_list_item"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/qb_px_15"
+        android:paddingEnd="@dimen/qb_px_15">
+
+        <TextView
+            android:layout_width="@dimen/qb_px_100"
+            android:layout_height="wrap_content"
+            android:text="银行卡号"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_15"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/id"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:hint="请输入姓名"
+            android:textColor="#333333"
+            android:textColorHint="#CCCCCC"
+            android:textSize="@dimen/qb_px_15" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="@dimen/qb_px_230"
+        android:layout_height="@dimen/qb_px_40"
+        android:layout_marginTop="@dimen/qb_px_70"
+        android:background="@drawable/bg_modify_btn"
+        android:gravity="center"
+        android:text="完成"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/qb_px_15" />
+</LinearLayout>

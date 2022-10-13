@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--单选按钮选中时的背景-->
+    <item android:state_pressed="true" android:drawable="@drawable/main_persion_select"/>
+    <!--单选按钮未选中的背景-->
+    <item android:state_pressed="false" android:drawable="@drawable/main_no_select_my"/>
+    <!--单选按钮默认的背景-->
+    <item android:drawable="@drawable/main_no_select_my"/>
+
+</selector>

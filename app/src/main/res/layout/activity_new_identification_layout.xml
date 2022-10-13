@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7F7F7"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar_layout" />
+
+    <EditText
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_12"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:layout_marginRight="@dimen/qb_px_12"
+        android:background="@drawable/bg_list_item"
+        android:hint="姓名"
+        android:paddingLeft="@dimen/qb_px_15"
+        android:paddingRight="@dimen/qb_px_15"
+        android:textColor="#333333"
+        android:textColorHint="#CCCCCC"
+        android:textSize="@dimen/qb_px_15" />
+
+
+    <EditText
+        android:id="@+id/id"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_45"
+        android:layout_marginLeft="@dimen/qb_px_12"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:layout_marginRight="@dimen/qb_px_12"
+        android:background="@drawable/bg_list_item"
+        android:hint="身份证"
+        android:paddingLeft="@dimen/qb_px_15"
+        android:paddingRight="@dimen/qb_px_15"
+        android:textColor="#333333"
+        android:textColorHint="#CCCCCC"
+        android:textSize="@dimen/qb_px_15" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/qb_px_12"
+        android:layout_marginTop="@dimen/qb_px_10"
+        android:layout_marginRight="@dimen/qb_px_12"
+        android:text="请确保注册手机号与本人实名信息一致，否则实名认证失败"
+        android:textColor="#999999"
+        android:textSize="@dimen/qb_px_12" />
+
+
+    <TextView
+        android:id="@+id/submit"
+        android:layout_width="@dimen/qb_px_230"
+        android:layout_height="@dimen/qb_px_40"
+        android:layout_marginTop="@dimen/qb_px_70"
+        android:background="@drawable/bg_modify_btn"
+        android:gravity="center"
+        android:text="确定"
+        android:textColor="#FFFFFF"
+        android:textSize="@dimen/qb_px_15" />
+</LinearLayout>

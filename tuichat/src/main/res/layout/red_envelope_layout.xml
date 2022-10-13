@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/ll_red_base"
+
+    >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        android:paddingTop="12dp"
+        android:background="@color/white"
+
+        >
+        <LinearLayout
+            android:id="@+id/ll_red_back"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/back"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="12dp"
+                />
+            
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发红包"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+
+
+            />
+
+
+    </RelativeLayout>
+
+    <!--红包金额不能超过200-->
+
+    <TextView
+        android:id="@+id/tv_more_money"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@color/order_message_color"
+        android:text="单个红包金额不能超过200元"
+        android:visibility="gone"
+        android:gravity="center"
+        android:textSize="12sp"
+        />
+
+    <TextView
+        android:id="@+id/tv_luck"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:textColor="@color/order_message_color"
+        android:text="定向红包"
+
+        android:drawablePadding="8dp"
+
+        android:gravity="center_vertical"
+        android:paddingLeft="23dp"
+        android:textSize="16sp"
+        android:visibility="gone"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/save_red_bg"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="金额"
+            android:textColor="#1A1A1A"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            />
+
+        <EditText
+            android:id="@+id/et_mony"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="80dp"
+            android:background="@null"
+            android:gravity="right|center_vertical"
+            android:hint="￥0.00"
+            android:inputType="numberDecimal"
+            android:paddingRight="10dp" />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/save_red_bg"
+        android:layout_marginTop="16dp"
+        >
+
+        <EditText
+            android:id="@+id/et_notes"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="12dp"
+            android:hint="恭喜发财，大吉大利"
+            android:gravity="center_vertical"
+            android:paddingRight="10dp"
+            android:background="@null"
+            android:textSize="16sp"
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/gong_xi_fa_cai"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="12dp"
+            />
+
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_red_envelope_cover"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/save_red_bg"
+        android:layout_marginTop="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红包封面"
+            android:textColor="#1A1A1A"
+            android:textSize="16sp"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="12dp"
+            />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:hint="￥0.00"
+           android:layout_centerVertical="true"
+            android:paddingRight="10dp"
+            android:src="@drawable/red_cover_back"
+            android:layout_alignParentRight="true"
+            />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tv_set_ok_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="￥0.00"
+        android:textSize="48sp"
+        android:textColor="#1A1A1A"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="5dp"
+        />
+
+    <TextView
+        android:id="@+id/tv_into_red_envelope"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="塞钱进红包"
+        android:textSize="18sp"
+        android:textColor="@color/white"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:paddingLeft="36dp"
+        android:paddingRight="36dp"
+        android:paddingTop="7dp"
+        android:paddingBottom="12dp"
+        android:background="@drawable/bg_red_layout"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="bottom"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="可直使用收到的零钱发红包"
+            android:layout_gravity="bottom"
+            android:textSize="14sp"
+            android:textColor="#808080"
+            android:layout_marginBottom="54dp"
+            android:gravity="center"
+            android:layout_centerVertical="true"
+
+
+
+            />
+
+        <com.tencent.qcloud.tuikit.tuichat.ui.view.CustomerKeyboardRed
+            android:id="@+id/custom_key_board"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="30dp"
+            app:customerKeyboardLayout="@layout/ui_customer_keyboard_item"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+
+            />
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

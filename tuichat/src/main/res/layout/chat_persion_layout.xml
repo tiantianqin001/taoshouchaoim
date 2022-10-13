@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/rl_base"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="233dp"
+    android:layout_height="100dp"
+    android:background="@drawable/shape_persion_bg"
+
+    >
+    <ImageView
+        android:id="@+id/iv_avatar"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/defult_avater"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="4dp"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_nink_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_toRightOf="@+id/iv_avatar"
+        android:text="一阵风"
+        android:textColor="#333333"
+        android:textSize="16sp" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/iv_avatar"
+        android:background="#eee"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="11sp"
+        android:layout_below="@+id/iv_avatar"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="20dp"
+        android:text="个人名片"
+        android:textColor="#999999"
+        />
+</RelativeLayout>

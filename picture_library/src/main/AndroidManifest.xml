@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.luck.picture.lib">
+
+    <uses-sdk tools:overrideLibrary="androidx.camera.view,
+    androidx.camera:camera-camera2,
+    androidx.camera.camera2,androidx.camera.lifecycle,
+    androidx.camera.core" />
+
+    <application>
+        <provider
+            android:name="com.luck.picture.lib.PictureFileProvider"
+            android:authorities="${applicationId}.luckProvider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/file_paths" />
+        </provider>
+
+        <activity
+            android:name=".PictureSelectorActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity
+            android:name=".PictureSelectorWeChatStyleActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity
+            android:name=".PictureSelectorCameraEmptyActivity"
+
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/Picture.Theme.Translucent" />
+        <activity
+            android:name=".PictureCustomCameraActivity"
+
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+
+        <activity
+            android:name=".PicturePreviewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity
+            android:name=".PictureSelectorPreviewWeChatStyleActivity"
+
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity
+            android:name=".PictureVideoPlayActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+          />
+        <activity
+            android:name=".PictureExternalPreviewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+       />
+
+        <activity
+            android:name=".PicturePlayAudioActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+   />
+
+        <activity
+            android:name="com.yalantis.ucrop.UCropActivity"
+            android:theme="@style/Base.Theme.NoActionBar"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            />
+        <activity
+            android:name="com.yalantis.ucrop.PictureMultiCuttingActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:theme="@style/Base.Theme.NoActionBar" />
+
+    </application>
+
+</manifest>

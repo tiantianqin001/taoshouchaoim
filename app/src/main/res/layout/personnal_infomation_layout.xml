@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/base_title_bar_layout" />
+
+    <LinearLayout
+        android:id="@+id/rl_my_avatar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_67"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/qb_px_16"
+        android:paddingEnd="@dimen/qb_px_12">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="头像"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_15" />
+
+        <ImageView
+            android:id="@+id/avatar"
+            android:layout_width="@dimen/qb_px_40"
+            android:layout_height="@dimen/qb_px_40"
+            android:src="@mipmap/persion_avatar" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_3"
+            android:src="@mipmap/persion_item_back" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginStart="@dimen/qb_px_12"
+        android:layout_marginEnd="@dimen/qb_px_12"
+        android:background="#F2F2F2" />
+
+    <LinearLayout
+        android:id="@+id/rl_nick_name"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/qb_px_16"
+        android:paddingEnd="@dimen/qb_px_12">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="昵称"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_15" />
+
+        <TextView
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="@dimen/qb_px_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_3"
+            android:src="@mipmap/persion_item_back" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginStart="@dimen/qb_px_12"
+        android:layout_marginEnd="@dimen/qb_px_12"
+        android:background="#F2F2F2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/qb_px_16"
+        android:paddingEnd="@dimen/qb_px_32">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="账号"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_15" />
+
+        <TextView
+            android:id="@+id/id"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="@dimen/qb_px_14" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginStart="@dimen/qb_px_12"
+        android:layout_marginEnd="@dimen/qb_px_12"
+        android:background="#F2F2F2" />
+
+    <LinearLayout
+        android:id="@+id/rl_qt_code"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/qb_px_16"
+        android:paddingEnd="@dimen/qb_px_32">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="二维码"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_15" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/my_qr_code" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginStart="@dimen/qb_px_12"
+        android:layout_marginEnd="@dimen/qb_px_12"
+        android:background="#F2F2F2" />
+
+    <LinearLayout
+        android:id="@+id/rl_sex"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/qb_px_16"
+        android:paddingEnd="@dimen/qb_px_12">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="性别"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_15" />
+
+        <TextView
+            android:id="@+id/sex"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="@dimen/qb_px_14" />
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/qb_px_3"
+            android:src="@mipmap/persion_item_back" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_1"
+        android:layout_marginStart="@dimen/qb_px_12"
+        android:layout_marginEnd="@dimen/qb_px_12"
+        android:background="#F2F2F2" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/qb_px_56"
+        android:background="@color/white"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/qb_px_16"
+        android:paddingEnd="@dimen/qb_px_32">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机号"
+            android:textColor="#333333"
+            android:textSize="@dimen/qb_px_15" />
+
+        <TextView
+            android:id="@+id/phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#666666"
+            android:textSize="@dimen/qb_px_14" />
+
+    </LinearLayout>
+
+</LinearLayout>

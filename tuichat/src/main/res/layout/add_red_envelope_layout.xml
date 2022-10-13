@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="74dp"
+        android:orientation="horizontal"
+        android:paddingTop="22dp"
+
+        >
+        <LinearLayout
+            android:id="@+id/ll_red_back"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/back"
+                android:layout_marginLeft="10dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="红包封面"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:layout_centerInParent="true"
+
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="添加"
+            android:textSize="15sp"
+            android:textColor="#4C5B82"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="12dp"
+            android:visibility="gone"
+            />
+
+
+    </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="444dp"
+        android:orientation="vertical"
+        android:layout_marginLeft="40dp"
+        android:layout_marginRight="40dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/save_red_bg"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="387dp"
+            android:layout_margin="14dp"
+            android:background="@drawable/save_red_add_bg_two"
+            >
+
+            <LinearLayout
+                android:id="@+id/ll_name_red_envelop"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                >
+
+                <ImageView
+                    android:id="@+id/iv_avatar"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:src="@drawable/persion_avatar"
+                    />
+                <TextView
+                    android:id="@+id/tv_name_red_envelop"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#FFE5BB"
+                    android:textSize="14sp"
+                    android:text="哈林发出的红包"
+                    android:layout_marginLeft="12dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="恭喜发财，大吉大利"
+                android:textSize="17sp"
+                android:textColor="#FFE5BB"
+                android:layout_below="@+id/ll_name_red_envelop"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="24dp"
+                android:visibility="gone"
+                />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#413E39"
+                android:textSize="28dp"
+                android:text="開"
+                android:layout_marginBottom="50dp"
+                android:layout_alignParentBottom="true"
+                android:gravity="center"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/save_red_open_bg"
+                />
+
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="默认"
+            android:textSize="16sp"
+            android:textColor="#1A1A1A"
+            android:layout_gravity="center"
+
+
+            />
+
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="bottom|center"
+        >
+        <TextView
+            android:id="@+id/tv_user_cover"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用封面"
+            android:textSize="18sp"
+            android:textColor="@color/white"
+            android:layout_marginBottom="40dp"
+            android:paddingLeft="32dp"
+            android:paddingRight="32dp"
+            android:paddingTop="12dp"
+            android:paddingBottom="12dp"
+            android:background="@drawable/bg_red_layout"
+            />
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

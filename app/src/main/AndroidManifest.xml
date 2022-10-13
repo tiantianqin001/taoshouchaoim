@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.pingmo.chengyan">
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <!-- 采用Jcenter方式自动集成，不需要再清单Manifest中配置 -->
+    <!--位置信息-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <!--如果是安卓10.0，需要后台获取连接的wifi名称则添加进程获取位置信息权限 -->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <!--android 10.0使用wifi api新添加的权限-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <!-- Android8.0+安装 -->
+    <uses-permission android:name="android.permission.REQUEST_INSTALL_PACKAGES" />
+    <!-- 允许程序读取通讯录权限 -->
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <!-- 录屏需要 -->
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <!-- 手机震动 -->
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <!-- //悬浮窗权限-->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+    <!-- 网络权限 -->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <!--声音的全新-->
+    <uses-permission
+        android:name="android.permission.CAPTURE_AUDIO_OUTPUT"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission
+        android:name="android.permission.CAPTURE_VIDEO_OUTPUT"
+        tools:ignore="ProtectedPermissions" />
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+    <uses-permission android:name="android.permission.CHANGE_WIFI_MULTICAST_STATE" />
+
+    <!-- bugly -->
+    <uses-permission
+        android:name="android.permission.READ_LOGS"
+        tools:ignore="ProtectedPermissions" />
+    <!--android 9.0上使用前台服务，需要添加权限-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+
+    <!-- 读写SDCard权限 -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+
+    <!--用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <!--用于访问GPS定位-->
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+    <!--用于获取运营商信息，用于支持提供运营商信息相关的接口-->
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"></uses-permission>
+    <!--用于访问wifi网络信息，wifi信息会用于进行网络定位-->
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"></uses-permission>
+    <!--用于获取wifi的获取权限，wifi信息会用来进行网络定位-->
+    <uses-permission android:name="android.permission.CHANGE_WIFI_STATE"></uses-permission>
+    <!--用于访问网络，网络定位需要上网-->
+    <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <!--用于读取手机当前的状态-->
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"></uses-permission>
+    <!--用于写入缓存数据到扩展存储卡-->
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"></uses-permission>
+    <!--用于申请调用A-GPS模块-->
+    <uses-permission android:name="android.permission.ACCESS_LOCATION_EXTRA_COMMANDS"></uses-permission>
+    <!--如果设置了target >= 28 如果需要启动后台定位则必须声明这个权限-->
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+    <!--如果您的应用需要后台定位权限，且有可能运行在Android Q设备上,并且设置了target>28，必须增加这个权限声明-->
+    <uses-permission android:name="android.permission.ACCESS_BACKGROUND_LOCATION" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
+    <uses-permission android:name="android.permission.MANAGE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name="com.pingmo.chengyan.MyAPP"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:networkSecurityConfig="@xml/network_security_config"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/launch"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:replace="android:allowBackup">
+        <activity
+            android:name="com.pingmo.chengyan.activity.login.LoginActivity"
+            android:screenOrientation="portrait"
+
+            android:windowSoftInputMode="stateAlwaysHidden|adjustPan"
+            android:launchMode="singleInstance"
+            tools:ignore="LockedOrientationActivity">
+
+
+        </activity>
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.login.StartPageActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name="com.pingmo.chengyan.MainActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:launchMode="singleInstance"
+            >
+
+
+        </activity>
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.login.RegistActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.login.VerificationLoginActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.DeviceManagementActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.login.ForgotPasswordActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.zxing.CodeScanActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+            android:launchMode="singleInstance"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.PersonalInformationActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.tencent.qcloud.tuikit.tuiconversation.ui.page.SystemSetMessageActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.FeedbackActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.shop.activity.WeChatMallActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+        <activity
+            android:name="com.pingmo.chengyan.activity.shop.activity.MallTypeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.shop.activity.ProductDetailsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.zxing.ScanGeneratectivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.shop.activity.OrderConfirmationActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.ResetPayPasswordActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.PayMentSetActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.shop.activity.AddressListActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.shop.activity.AddressDetailsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.PotoActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity"
+
+            />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.NickActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.WalletActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.zxing.ScanResultsActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.SettingActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.AboutActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.SafeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.ModifyActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.IdentificationActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.HelperActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.OrderActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.RechargeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.RechargeTipActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.CashOutActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.CashOutTipActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.BankCardNewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.CashListActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.ClipPictureActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.BankAddActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.CommonWebviewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.shop.activity.WeChatMallNewActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.VerifyIdentidyActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <activity
+            android:name="com.pingmo.chengyan.activity.persion.VerifyChangeActivity"
+            android:screenOrientation="portrait"
+            tools:ignore="LockedOrientationActivity" />
+
+        <receiver android:name="com.pingmo.chengyan.receiver.ScanBroadcastReceiver">
+            <intent-filter>
+                <action android:name="cn.twle.android.sendbroadcast.MS_BROADCAST" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.pingmo.chengyan.receiver.PaymentBroadcastReceiver">
+            <intent-filter>
+                <action android:name="cn.twle.android.sendbroadcast.Setup.payment.password" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.pingmo.chengyan.receiver.TokenFileBroadcastReceiver">
+            <intent-filter>
+                <action android:name="cn.twle.android.sendbroadcast.Setup.Token" />
+            </intent-filter>
+        </receiver>
+
+        <receiver android:name="com.pingmo.chengyan.receiver.GetGeneratecBroadcastReceiver">
+            <intent-filter>
+                <action android:name="cn.twle.android.sendbroadcast.GetGeneratec" />
+            </intent-filter>
+        </receiver>
+        <!-- android 7.0 文件权限适配 -->
+        <provider
+            android:name="androidx.core.content.FileProvider"
+            android:authorities="com.pingmo.chengyan.fileprovider"
+            android:exported="false"
+            android:grantUriPermissions="true">
+            <meta-data
+                android:name="android.support.FILE_PROVIDER_PATHS"
+                android:resource="@xml/fileprovider_paths" />
+        </provider>
+        <!-- 表示当前项目已经适配了分区存储特性 -->
+        <meta-data
+            android:name="ScopedStorage"
+            android:value="true" />
+
+        <!-- 高德的appkey-->
+        <meta-data
+            android:name="com.amap.api.v2.apikey"
+            android:value="e6719c6a7695ba1880a4714d668ce449" />
+        <meta-data
+            android:name="ScopedStorage"
+            android:value="true" />
+    </application>
+
+</manifest>

@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/ll_addressee"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+        android:paddingEnd="@dimen/seal_login_fragment_login_phonenumber_margin_right"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/tv_addressee"
+            style="@style/TextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="收件人"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
+            android:textColor="@color/text_black"
+            android:textSize="15dp" />
+
+
+        <com.pingmo.chengyan.activity.shop.view.ClearWriteEditText
+            android:id="@+id/cet_addressee"
+            style="@style/EditTextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请填写真实姓名"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textColorHint="#BDBDBE"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dot_line1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll_addressee">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+            android:layout_marginEnd="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+            android:background="@drawable/shape_dot_line_xu"
+            android:layerType="software" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_phone"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+        android:paddingEnd="@dimen/seal_login_fragment_login_phonenumber_margin_right"
+        app:layout_constraintTop_toBottomOf="@id/ll_dot_line1">
+
+        <TextView
+            style="@style/TextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="手机号"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
+            android:textColor="@color/text_black"
+            android:textSize="15dp" />
+
+
+        <com.pingmo.chengyan.activity.shop.view.ClearWriteEditText
+            android:id="@+id/cet_phone"
+            style="@style/EditTextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@null"
+            android:ellipsize="end"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请填写收货人手机号码"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textColorHint="#BDBDBE"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dot_line2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll_phone">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+            android:layout_marginEnd="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+            android:background="@drawable/shape_dot_line_xu"
+            android:layerType="software" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_area"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:clickable="true"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+        android:paddingEnd="@dimen/seal_login_fragment_login_phonenumber_margin_right"
+        app:layout_constraintTop_toBottomOf="@id/ll_dot_line2">
+
+        <TextView
+            style="@style/TextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="false"
+            android:text="所在区"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
+            android:textColor="@color/text_black"
+            android:textSize="15dp" />
+
+
+        <TextView
+            android:id="@+id/tv_area"
+            style="@style/EditTextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@null"
+            android:clickable="false"
+            android:hint="请选择所在区"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textColorHint="#BDBDBE"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_dot_line3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll_area">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_marginStart="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+            android:layout_marginEnd="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+            android:background="@drawable/shape_dot_line_xu"
+            android:layerType="software" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_address"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="@color/white"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="@dimen/seal_login_fragment_login_phonenumber_margin_left"
+        android:paddingEnd="@dimen/seal_login_fragment_login_phonenumber_margin_right"
+        app:layout_constraintTop_toBottomOf="@id/ll_dot_line3">
+
+        <TextView
+            style="@style/TextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="详细地址"
+            android:textAppearance="@android:style/TextAppearance.DeviceDefault.Medium.Inverse"
+            android:textColor="@color/text_black"
+            android:textSize="15dp" />
+
+
+        <com.pingmo.chengyan.activity.shop.view.ClearWriteEditText
+            android:id="@+id/cet_address"
+            style="@style/EditTextStyle.Alignment"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:background="@null"
+            android:focusable="true"
+            android:focusableInTouchMode="true"
+            android:hint="请填写街道、小区门牌等详细地址"
+            android:maxLines="1"
+            android:textColor="@color/text_black"
+            android:textColorHint="#BDBDBE"
+            android:textSize="15dp" />
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view_cb"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginTop="15dp"
+        android:background="@color/white"
+        app:layout_constraintTop_toBottomOf="@id/ll_address" />
+
+    <CheckBox
+        android:id="@+id/cb_default"
+        style="@style/CustomCheckboxTheme"
+        android:layout_width="match_parent"
+        android:padding="10dp"
+        android:layout_height="45dp"
+        android:layout_marginStart="30dp"
+        android:checked="true"
+        android:text="设置默认地址"
+        app:layout_constraintTop_toTopOf="@id/view_cb" />
+
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="76dp"
+        android:background="@drawable/shape_cff4_r20"
+        android:text="保存"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

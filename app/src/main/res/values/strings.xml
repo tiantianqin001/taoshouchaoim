@@ -1,0 +1,127 @@
+<resources>
+    <string name="app_name">城言</string>
+    <string name="prompt_empty">没有数据</string>
+    <string name="prompt_error">网络错误</string>
+    <string name="prompt_loading">Loading…</string>
+
+    <string name="demo_account_tag">ID：</string>
+    <string name="demo_language">简体中文</string>
+    <string name="demo_theme_light">轻快</string>
+    <string name="demo_signature_tag">个性签名：</string>
+
+    // 主页Tab相关
+    <string name="tab_contact_tab_text">通讯录</string>
+    <string name="tab_contact_three_text">消息</string>
+    <string name="tab_conversation_tab_text">商城</string>
+    <string name="tab_profile_tab_text">我的</string>
+    <string name="tab_scenes_tab_text">直播</string>
+    <string name="common_confirm">确认</string>
+    <string name="common_cancel">取消</string>
+    <string name="common_done">完成</string>
+    <string name="common_save">保存</string>
+
+    // "我"相关
+    <string name="profile">我</string>
+    <string name="modify_user_icon">头像</string>
+    <string name="modify_nick_name">昵称</string>
+    <string name="add_rule">加我为好友时</string>
+    <string name="allow_type_allow_any">允许任何人</string>
+    <string name="allow_type_deny_any">拒绝任何人</string>
+    <string name="allow_type_need_confirm">需要验证</string>
+    <string name="exit">退出登录</string>
+    <string name="about_im">关于腾讯云·IM</string>
+    <string name="modify_birthday">生日</string>
+    <string name="modify_gender">性别</string>
+    <string name="modify_signature">个性签名</string>
+    <string name="demo_no_status">暂无个性签名</string>
+    <string name="modify_account">账号</string>
+    <string name="cancel_account">注销账号</string>
+    <string name="cancel_account_alert_tip">您确定要注销账号吗？</string>
+    <string name="cancel_account_tip">注销后，您将无法使用当前账号，相关数据也将删除无法找回。当前账号 %s </string>
+    <string name="cancel_account_error_msg">注销失败,当前账号未查到token或手机号，请使用手机号登录。</string>
+    <string name="cancel_account_successful">注销成功</string>
+    <string name="demo_profile_detail">详细资料</string>
+    <string name="self_infomation_collection_list">个人信息收集清单</string>
+    <string name="third_part_shared_list">第三方信息共享清单</string>
+    <string name="demo_buying_tips">该功能为旗舰版功能</string>
+    <string name="logout_tip">您确定要退出登录么？</string>
+
+
+
+
+
+    <string name="mark_all_message_as_read_succ">清空未读成功</string>
+    <string name="mark_all_message_as_read_err_format">清空未读失败, %d, %s</string>
+    <string name="conversation_title">消息</string>
+    <string name="conversation_shop">商城</string>
+    <string name="im_user_agreement">用户协议</string>
+    <string name="im_privacy">隐私政策</string>
+    <string name="im_statement">免责声明</string>
+    <string name="demo_self_detail_modify_nickname_rule">仅限中文、字母、数字和下划线</string>
+    <string name="demo_choose_avatar">选择头像</string>
+    <string name="demo_about_sdk_version">SDK版本</string>
+    <string name="demo_about_im">关于</string>
+    <string name="demo_contact_us">联系我们</string>
+
+
+    <string name="demo_self_detail_gender_male">男</string>
+    <string name="demo_self_detail_gender_female">女</string>
+    <string name="demo_self_detail_gender_unknown">未知</string>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <string name="seal_privacy_blacklist">我的黑名单</string>
+    <string name="seal_privacy_search_phone">允许通过手机号搜索</string>
+    <string name="seal_privacy_search_st_account">加群方式</string>
+    <string name="seal_privacy_friend_verify">加我为好友时需要验证</string>
+    <string name="seal_privacy_group_verify">允许被直接添加至群聊</string>
+
+    <string name="seal_group_manager_copy_title">一键复制新群</string>
+    <string name="seal_group_manager_copy_tip_title">温馨提示:</string>
+    <string name="seal_group_manager_copy_tip_content">生成的新群仅支持复制群成员信息，现有的所有设置无法复制</string>
+    <string name="seal_group_manager_copy_btn_content">确认复制</string>
+    <string name="seal_group_manager_copy_tips">是否复制新群</string>
+    <string name="seal_group_manager_copy_in_protect">该群处于保护期，7日内无法复制</string>
+    <string name="seal_group_manager_copy_copied_7">一个群7天内只能被复制一次</string>
+    <string name="seal_group_manager_copy_not_exist">群不存在或被解散</string>
+    <string name="seal_group_manager_copy_fail">复制失败</string>
+
+    <string name="profile_group_has_no_notice">暂无群公告</string>
+    <string name="common_network_unavailable">当前网络不可用</string>
+    <string name="common_network_check">请检查网络设置</string>
+    <string name="common_network_error_and_retry_after">网络问题请稍后重试</string>
+
+    <string name="demo_self_detail_modify_nickname">修改昵称</string>
+    <string name="demo_self_detail_modify_signature">修改个性签名</string>
+    <string name="demo_self_detail_modify_gender">修改性别</string>
+    <string name="rc_permission_grant_needed">您需要在设置中打开权限</string>
+    <string name="rc_confirm">确认</string>
+    <string name="rc_cancel">取消</string>
+    <string name="rc_not_prompt">不再提示</string>
+    <string name="rc_permission_microphone">（麦克风）。</string>
+    <string name="demo_message_read_switch_title">消息阅读状态</string>
+    <string name="demo_message_read_switch_open_tip">该功能为旗舰版功能</string>
+    <string name="demo_message_read_switch_open_text">关闭后，您收发的消息均不带消息阅读状态，您将无法看到对方是否已读，同时对方也无法看到你是否已读。</string>
+    <string name="upgrade_sure">立即升级</string>
+    <string name="demo_user_status_switch_title">显示在线状态</string>
+    <string name="demo_user_status_switch_on_text">关闭后，您将不可以在会话列表和通讯录中看到好友在线或离线的状态提示。</string>
+    <string name="demo_user_status_switch_off_text">开启后，您将可以在会话列表和通讯录中看到好友在线或离线的状态提示。</string>
+    <string name="demo_message_read_switch_close_text">开启后，您在群聊中收发的消息均带有消息阅读状态，并且可以看到对方是否已读。与您单聊的好友若也开启了消息阅读状态，您与好友在单聊中收发的消息也将带有消息阅读状态。</string>
+</resources>

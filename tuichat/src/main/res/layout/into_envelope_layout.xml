@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="320dp"
+    android:layout_height="320dp"
+    android:orientation="vertical"
+    android:background="@drawable/save_red_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+   >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="56dp">
+        
+        <LinearLayout
+            android:id="@+id/ll_envelope_del"
+            android:layout_width="80dp"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/red_envelope_del"
+                android:layout_gravity="center"
+                android:layout_marginLeft="12dp"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="使用密码"
+            android:textSize="17sp"
+            android:textColor="#979797"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:visibility="gone"
+            />
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="城言红包"
+        android:layout_gravity="center"
+
+        android:textColor="#000000"
+        android:textSize="17sp"
+        />
+    <TextView
+        android:id="@+id/tv_send_money"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="40sp"
+        android:textColor="#000000"
+        android:text="¥18.00"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:background="@color/split_lint_color"
+        />
+
+    <RelativeLayout
+        android:id="@+id/rl_payment_method"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:text="支付方式"
+            android:textColor="#808080"
+            android:textSize="14sp"
+
+            />
+
+        <TextView
+            android:id="@+id/tv_bind_card"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="18dp"
+            android:text="零钱"
+
+
+            />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:src="@drawable/small_change_pay"
+            android:layout_toLeftOf="@+id/tv_bind_card"
+            android:layout_marginRight="8dp"
+            />
+
+    </RelativeLayout>
+
+    <com.tencent.qcloud.tuikit.tuichat.ui.view.PhoneCode
+        android:id="@+id/pc_code"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        app:tvWidth="38dp"
+        app:tvHeight="38dp"
+        app:isShowPwd="true"
+        app:codeLength="6"
+        />
+
+    <!--软键盘-->
+    <com.tencent.qcloud.tuikit.tuichat.ui.view.CustomerKeyboard
+        android:id="@+id/custom_key_board"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:customerKeyboardLayout="@layout/ui_customer_keyboard_item"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="20dp"
+        android:visibility="gone"
+        />
+
+
+</LinearLayout>

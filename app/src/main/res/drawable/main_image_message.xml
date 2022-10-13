@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!--单选按钮选中时的背景-->
+    <item android:state_checked="false" android:drawable="@drawable/main_no_select_message"/>
+    <!--单选按钮未选中的背景-->
+    <item android:state_checked="true" android:drawable="@drawable/main_select_message"/>
+
+
+</selector>

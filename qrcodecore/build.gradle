@@ -1,0 +1,13 @@
+apply plugin: 'com.android.library'
+apply plugin: 'com.github.dcendents.android-maven'
+
+android {
+    compileSdkVersion 30
+
+    defaultConfig {
+
+        minSdkVersion 21
+
+        targetSdkVersion 30
+    }
+}

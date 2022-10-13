@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/white"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:focusable="true"
+    android:layout_marginBottom="5dp"
+    android:paddingTop="8dp"
+    android:paddingBottom="8dp"
+   >
+
+    <com.tencent.qcloud.tuicore.component.gatherimage.ShadeImageView
+        android:id="@+id/avatar"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginLeft="15.36dp" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        />
+
+    <TextView
+        android:id="@+id/description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ellipsize="end"
+        android:singleLine="true"
+        android:textColor="@color/text_gray1"
+        android:layout_below="@+id/name"
+        android:layout_toRightOf="@+id/avatar"
+        android:layout_marginTop="6dp"
+        android:layout_marginLeft="10dp"
+        android:layout_alignParentBottom="true"
+        android:textSize="11.52sp"
+        android:maxLines="1"
+        />
+
+    <TextView
+        android:id="@+id/tv_agree_reject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:textColor="@color/text_gray1"
+        android:text="陶老大123 已拒绝"
+        android:textSize="11.52sp"
+        android:layout_marginTop="6dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        />
+
+
+
+    <LinearLayout
+        android:id="@+id/ll_agree_reject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="5dp"
+        android:gravity="center_vertical"
+        android:layout_marginRight="8dp"
+        android:orientation="horizontal"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true"
+        >
+        <TextView
+            android:id="@+id/agree"
+            android:layout_width="36.84dp"
+            android:layout_height="28.8dp"
+            android:textColor="#FF942B"
+            android:textSize="15.36sp"
+            android:gravity="center"
+            android:layout_marginRight="9.6dp"
+            android:layout_gravity="center"
+            android:text="同意"
+            tools:text="同意"/>
+
+        <TextView
+            android:id="@+id/reject"
+            android:layout_width="36.84dp"
+            android:layout_height="28.8dp"
+            android:textColor="@color/text_gray1"
+            android:textSize="15.36sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="拒绝"
+            tools:text="拒绝"/>
+
+    </LinearLayout>
+
+
+
+    <TextView
+        android:id="@+id/result_tv"
+        android:textSize="15.36sp"
+        android:text="@string/accepted"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15.36dp"
+        android:visibility="gone"/>
+
+</RelativeLayout>
